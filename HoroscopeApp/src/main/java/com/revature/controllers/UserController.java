@@ -92,10 +92,7 @@ public class UserController {
             CurrentUser.setCurrentUser(user);
             System.out.println(CurrentUser.getCurrentUser().getFirstname());
 
-            context.json(user);
-            context.result("Successfully logged in as " + CurrentUser.getCurrentUser().getFirstname() + " " +
-                    CurrentUser.getCurrentUser().getLastname()).status(202);
-
+            context.json(user).status(202);
         } else {
             context.result("Invalid email address or password").status(404);
         }

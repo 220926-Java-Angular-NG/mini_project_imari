@@ -3,7 +3,7 @@ package com.revature.controllers;
 import com.revature.models.User;
 
 public class CurrentUser {
-    private static User currentUser;
+    public static User currentUser;
 
     private CurrentUser() {
     }

@@ -3,6 +3,8 @@ package com.revature.repos;
 import com.revature.models.User;
 import com.revature.utils.CRUDDaoInterface;
 import com.revature.utils.ConnectionManager;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -10,6 +12,7 @@ import java.util.List;
 
 public class UserRepo implements CRUDDaoInterface<User> {
     public Connection connection;
+    private static final Logger LOGGER = LoggerFactory.getLogger(UserRepo.class);
 
     public UserRepo() {
         try {
@@ -17,7 +20,7 @@ public class UserRepo implements CRUDDaoInterface<User> {
             System.out.println(connection.getSchema());
 
         } catch (SQLException sqlException) {
-            System.out.println(sqlException.getMessage());
+            LOGGER.error(sqlException.getMessage());
         }
     }
 

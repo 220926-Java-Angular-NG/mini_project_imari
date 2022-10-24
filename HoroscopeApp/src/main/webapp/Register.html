@@ -1,10 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Create an Account</title>
     </head>
 
     <body>
-        
+        <div id="top">
+            <h1>Register Your Account</h1>
+            <p>Please fill in this form to create an account.</p>
+            <hr>
+        </div>
+
+        <div id="register-form">
+            <form>
+                <label>First Name:</label>
+                <input type="text" placeholder="Enter First Name" id="register-firstname">
+                <br>
+                
+                <label>Last Name:</label>
+                <input type="text" placeholder="Enter Last Name" id="register-lastname">
+                <br>
+
+                <label>Date of Birth:</label>
+                <input type="date" id="register-birthdate">
+                <br>
+
+                <label>Email:</label>
+                <input type="text" placeholder="Enter Email" id="register-email">
+                <br>
+
+                <label>Password:</label>
+                <input type="password" placeholder="Enter Password" id="register-password">
+                <br>
+
+                <br>
+                <button id="register-button">Sign Up</button>
+            </form>
+        </div>
+
+        <br>
+        <button id="back-button"> Back to Login </button>
+        <script src="./Register.js"></script>
     </body>
 </html>

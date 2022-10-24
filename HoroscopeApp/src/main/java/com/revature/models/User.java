@@ -13,15 +13,14 @@ public class User {
     public User() {
     }
 
-    public User(String firstname, String lastname, String email, String password, String birthdate, String zodiac,
-                String mood) {
+    public User(String firstname, String lastname, String email, String password, String birthdate, String zodiac) {
         this.firstname = firstname;
         this.lastname = lastname;
         this.email = email;
         this.password = password;
         this.birthdate = birthdate;
         this.zodiac = zodiac;
-        this.mood = mood;
+        this.mood = null;
     }
 
     public User(int id, String firstname, String lastname, String email, String password, String birthdate,
