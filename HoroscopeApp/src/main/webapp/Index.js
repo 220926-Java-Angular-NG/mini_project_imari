@@ -39,7 +39,7 @@ loginButton.addEventListener('click', async(event) => {
         })
 
         setTimeout( () => {
-            window.location.replace("home.html")
+            window.location.replace("./Home.html")
         }, 3000 )
 
 

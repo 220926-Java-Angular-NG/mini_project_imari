@@ -2,7 +2,7 @@ let backButton = document.getElementById("back-button")
 
 backButton.addEventListener('click', (event) => {
     event.preventDefault();
-    window.location.replace("index.html")
+    window.location.replace("./Index.html")
 })
 
 let registerButton = document.getElementById("register-button");
@@ -75,7 +75,7 @@ registerButton.addEventListener('click', async(event) => {
         }
 
         alert("Account successfully created!")
-        window.location.replace("index.html")
+        window.location.replace("./Index.html")
         
     } catch(error) {
        console.log(error)

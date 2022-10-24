@@ -1,0 +1,42 @@
+body {
+    background-color: royalblue;
+}
+
+#top h2 {
+    color: snow;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#register-form, #sign-in, #register {
+    background-color: azure;
+    width: 75%;
+    border: 1px solid indigo;
+    padding: 10px;
+    margin: left;
+}
+
+#horoscope, #mood {
+    background-color: darkblue;
+    width: 75%;
+    border: 5px solid skyblue;
+    padding: 25px;
+    margin: auto;
+}
+
+#horoscope p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: powderblue;
+    text-align: center;
+    font-size: medium;
+}
+
+#mood p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: magenta;
+    text-align: center;
+    font-size: large;
+}
+
+#mood {
+    text-align: center;
+}
